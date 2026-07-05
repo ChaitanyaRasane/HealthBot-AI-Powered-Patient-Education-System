@@ -22,7 +22,11 @@
       "destination": {
         "type": "service",
         "service": "frontend"
-      }
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/backend/main.py"
+    }
     }
   ]
 }
