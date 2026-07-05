@@ -6,7 +6,8 @@
     },
     "backend": {
       "root": "backend",
-      "entrypoint": "main.app"
+      "runtime": "python@3.9",
+      "entrypoint": "main.py"
     }
   },
   "rewrites": [
