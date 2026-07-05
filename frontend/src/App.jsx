@@ -10,9 +10,9 @@ export default function App() {
   const [showLogs, setShowLogs] = useState(false);
   const [error, setError] = useState('');
 
-  const BACKEND_URL = 'https://health-bot-ai-powered-patient-educa-nu.vercel.app/';
-  // No domain needed! Vercel handles the routing seamlessly.
-  // const BACKEND_URL = '/api';
+  const BACKEND_URL = 'https://health-bot-ai-powered-patient-educa-nu.vercel.app/api';
+  // For local development, comment out above and uncomment below:
+  // const BACKEND_URL = 'http://127.0.0.1:8000/api';
 
   // 1. Start session
   const handleStartSession = async (e) => {
@@ -40,7 +40,7 @@ export default function App() {
       }
     } catch (err) {
       console.error("Error starting session:", err);
-      setError("Unable to connect to the HealthBot API. Make sure backend/main.py is running on http://127.0.0.1:8000");
+      setError("Unable to connect to the HealthBot API. Make sure backend/main.py is running on https://health-bot-ai-powered-patient-educa-nu.vercel.app/");
     } finally {
       setLoading(false);
     }
@@ -547,7 +547,7 @@ export default function App() {
                     <h3 style={styles.cardTitle}>🔬 Start Education Session</h3>
                   </div>
                   <p style={{ margin: '0 0 20px 0', lineHeight: '1.6', color: '#94a3b8' }}>
-                    Welcome to the MediTech patient system. Type a medical condition or health topic below. HealthBot will query reliable databases and generate a comprehensive patient education package.
+                    Welcome to the MediTech patient system. Type a medical condition or health topic below. HealthBot will query reliable databases and generate a comprehensive patient education [...]
                   </p>
                   <form onSubmit={handleStartSession}>
                     <label style={{ display: 'block', fontSize: '14px', fontWeight: '600', color: '#94a3b8', marginBottom: '8px' }}>
