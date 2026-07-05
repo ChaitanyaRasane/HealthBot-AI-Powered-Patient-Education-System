@@ -12,7 +12,7 @@ export default function App() {
 
   // const BACKEND_URL = 'http://127.0.0.1:8000/api';
   // No domain needed! Vercel handles the routing seamlessly.
-const BACKEND_URL = await fetch('/api/endpoint');
+  const BACKEND_URL = '/api';
 
   // 1. Start session
   const handleStartSession = async (e) => {
