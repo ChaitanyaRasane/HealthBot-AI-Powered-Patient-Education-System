@@ -1,5 +1,7 @@
 # 🩺 HealthBot: AI-Powered Patient Education System (Web Edition)
 
+Demo : https://health-bot-ai-powered-patient-educa.vercel.app/
+
 > A decoupled, modern web-based patient education chatbot. It features a **FastAPI backend** running a stateless **LangGraph** & **LangChain** agent workflow, powered by **Tavily Search** and **OpenRouter**, combined with a premium, high-contrast dark themed **React/Vite frontend**.
 
 Python, FastAPI, LangGraph, LangChain, Tavily, OpenRouter, React, Vite, Vercel.
